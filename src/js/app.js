@@ -1,21 +1,31 @@
 import checkCardNumber from './card/card';
 import getPaySysytem from './payment/payment';
+import ae from '../img/ae.png';
+import diners from '../img/diners.png';
+import discover from '../img/discover.png';
+import jcb from '../img/jcb.png';
+import maestro from '../img/maestro.png';
+import mastercard from '../img/mastercard.png';
+import mir from '../img/mir.png';
+import uek from '../img/uek.png';
+import union from '../img/union.png';
+import visa from '../img/visa.png';
 
 const validatorForm = document.querySelector('.validator_form');
 const validatorInput = document.querySelector('.validator_input');
 const validatorMessage = document.querySelector('.validator_message');
 const validatorPicture = document.querySelector('.validator_pic');
 const cardsURL = {
-  mir: '../../src/img/mir.png',
-  diners: '../../src/img/diners.png',
-  jcb: '../../src/img/jcb.png',
-  ae: '../../src/img/ae.png',
-  visa: '../../src/img/visa.png',
-  maestro: '../../src/img/maestro.png',
-  mastercard: '../../src/img/mastercard.png',
-  discover: '../../src/img/discover.png',
-  union: '../../src/img/union.png',
-  uek: '../../src/img/uek.png',
+  mir,
+  diners,
+  jcb,
+  ae,
+  visa,
+  maestro,
+  mastercard,
+  discover,
+  union,
+  uek,
 };
 
 function showOkMessage() {
