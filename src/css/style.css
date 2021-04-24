@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #868686;
+  font-size: 18px;
+  font-family: 'Open Sans', 'Segoe UI', 'Verdana', sans-serif;
+}
+
+.column {
+  width: 80%;
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 100vh;
+  box-shadow: 0 0 15px 2px #1D3557;
+  padding: 40px 15px;
+  position: relative;
+}
+
+.validator_form {
+  border: 2px solid #1D3557;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.validator_title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.validator_row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px
+}
+
+.validator_pic {
+  width: 57px;
+  height: 36px;
+  background-color: #B6E0E2;
+  flex-shrink: 0;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.validator_input {
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-size: 18px;
+  font-family: 'Open Sans', 'Segoe UI', 'Verdana', sans-serif;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.validator_input::placeholder {
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.validator-input:focus::placeholder {
+  opacity: 0;
+}
+
+.validator_button {
+  font-size: 18px;
+  line-height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  color: white;
+  cursor: pointer;
+  background-color: #457B9D;
+  flex-shrink: 0;
+  outline: none;
+}
+
+.validator_button:focus {
+  outline: none;
+}
+
+.validator_message {
+  color: #E63946;
+  height: 0;
+  overflow: hidden;
+  transition: all .3s ease;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
